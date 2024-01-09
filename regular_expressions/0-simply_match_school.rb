@@ -3,9 +3,6 @@
 regex = /School/
 
 ARGV.each do |arg|
-  if arg.match?(regex)
-    puts "#{arg}$"
-  else
-    puts '$'
-  end
+  match = arg.match(regex)
+  puts match ? match[0] : ''
 end
