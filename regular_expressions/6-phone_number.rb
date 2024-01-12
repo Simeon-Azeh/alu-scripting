@@ -1,11 +1,3 @@
 #!/usr/bin/env ruby
-
-regex = /^\d{10}$/
-
-ARGV.each do |arg|
-  if arg.match?(regex)
-    puts "#{arg}$"
-  else
-    puts '$'
-  end
-end
+# Task 6
+puts ARGV[0].scan(/^\d{10}$/).join

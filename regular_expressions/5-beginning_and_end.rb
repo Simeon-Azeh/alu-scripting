@@ -1,11 +1,3 @@
 #!/usr/bin/env ruby
-
-regex = /^h.n$/
-
-ARGV.each do |arg|
-  if arg.match?(regex)
-    puts "#{arg}$"
-  else
-    puts '$'
-  end
-end
+# Task 5
+puts ARGV[0].scan(/h.n/).join
